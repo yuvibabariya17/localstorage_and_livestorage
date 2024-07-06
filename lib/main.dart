@@ -22,6 +22,8 @@ void main() async {
   await Hive.initFlutter();
   final appDocumentDir = await path_provider.getApplicationDocumentsDirectory();
   Hive.init(appDocumentDir.path);
+  Hive.registerAdapter(UserAdapter());
+
   await Hive.openBox('myBox');
   runApp(const MyApp());
 }

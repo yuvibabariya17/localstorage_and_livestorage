@@ -61,7 +61,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
           await box.add(newUser);
         }
 
-        Get.to(const HomeScreen());
+        Get.offAll(const HomeScreen());
       } catch (e) {
         print('Error submitting form: $e');
       }

@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:localstorage_and_livestorage/Views/HomeScreen.dart';
 import 'package:localstorage_and_livestorage/Views/RegisterScreen.dart';
 import 'package:sizer/sizer.dart';
 
@@ -13,7 +12,6 @@ class SplashScreen extends StatefulWidget {
 }
 
 class _SplashScreenState extends State<SplashScreen> {
-  
   @override
   void initState() {
     Timer(
@@ -23,7 +21,6 @@ class _SplashScreenState extends State<SplashScreen> {
             context,
             MaterialPageRoute(
               builder: (context) => const RegisterScreen(),
-              
             ));
       },
     );
